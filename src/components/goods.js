@@ -29,7 +29,7 @@ function MyVerticallyCenteredModal(props) {
 				<div >
 					{/* <h4>for More Details Scan the Qr code</h4> */}
 
-					<div className="qrcode"><QRrCode value={props.qr} /></div>
+					<div className="qrcode"><QRrCode value={"https://uishop.vercel.app/profile/"+props.qr+"/"} /></div>
 				</div>
 			</Modal.Body>
 			{/* <Modal.Footer>
@@ -138,7 +138,7 @@ const Goods = (props) => {
 									{/* _______________________ */}
 									<div className="qr">
 
-										{/* <QRrCode value={"https://finalshopbackend.herokuapp.com/api/"+good.id+"/"} /> */}
+										{/* <QRrCode value={"https://uishop.vercel.app/profile/"+good.id+"/"} /> */}
 										<Button variant="warning" onClick={() => setModalShow(true)}>
 											QR code
 </Button>
@@ -148,7 +148,7 @@ const Goods = (props) => {
 											<MyVerticallyCenteredModal
 												show={modalShow}
 												onHide={() => setModalShow(false)}
-												qr={"https://finalshopbackend.herokuapp.com/api/"+good.id+"/"}
+												qr={good.id}
 
 
 											/>
