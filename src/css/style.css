@@ -244,10 +244,7 @@ a:hover{
 
 
   }
-  #cont{
-	  display: flex !important;
-	  flex-wrap: nowrap;
-  }
+
   .single2{
 	width: 40%;
 	padding: 40px;
@@ -259,4 +256,24 @@ a:hover{
 	  width: 500px;
 	  height: 400px;
 	  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.4);
+  }
+  /* _______________________________________________ */
+#cont{
+	display: flex !important;
+	flex-wrap: wrap;
+  }
+  @media screen and (max-width:750px) {
+  .single {
+	  margin-left: 0px;
+	  width:auto;
+	  padding: 40px;
+  }
+  .single2 {
+	  width: 100%;
+	  padding: 40px;
+	  display: flex;
+  }
+  .single2 img {
+	  width: 100%;
+  }
   }
