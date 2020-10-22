@@ -135,8 +135,8 @@ const Services = (props) => {
 										{/* _______________________ */}
 										<div className="qr">
 
-											{/* <QRrCode value={"https://finalshopbackend.herokuapp.com/api/"+good.id+"/"} /> */}
-											<Button variant="warning" onClick={() => setModalShow(true)}>
+											<QRrCode value={"https://uishop.vercel.app/profile/"+service.id+"/"} />
+											{/* <Button variant="warning" onClick={() => setModalShow(true)}>
 												QR code
 </Button>
 
@@ -145,12 +145,12 @@ const Services = (props) => {
 												<MyVerticallyCenteredModal
 													show={modalShow}
 													onHide={() => setModalShow(false)}
-													qr={"https://finalshopbackend.herokuapp.com/api/"+service.id+"/"}
+													qr={"https://uishop.vercel.app/profile/"+service.id+"/"}
 
 
 												/>
 
-											</div>
+											</div> */}
 										</div>
 										{/* _______________________ */}
 

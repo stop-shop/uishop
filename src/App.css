@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap');
 body{
   background-color: #f6f4e6;
+  box-sizing: border-box;
 }
 
 *{
@@ -324,3 +325,6 @@ html {
 .MuiSelect-selectMenu{
   text-overflow: clip !important;
 }
+
+
+
